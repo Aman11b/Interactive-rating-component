@@ -153,7 +153,7 @@ form {
   justify-content: space-between;
 }
 
-button[type="menu"] {
+button[type="button"] {
   border-radius: 50%;
   border: none;
   width: 45px;
@@ -163,8 +163,20 @@ button[type="menu"] {
   background-color: var(--clr-Grey-800);
   color: var(--clr-Grey-500);
   font-weight: var(--fw-700);
+
+  cursor: pointer;
+}
+button[type="button"]:hover,
+button[type="submit"]:hover,
+button[type="submit"]:focus{
+  background-color: var(--clr-White);
+  color: var(--clr-Grey-950);
 }
 
+button[type="button"]:focus{
+  background-color: var(--clr-Orange-500);
+  color: var(--clr-Grey-950);
+}
 button[type="submit"] {
   width: 100%;
   background-color: var(--clr-Orange-500);
@@ -174,7 +186,9 @@ button[type="submit"] {
   padding: 15px 25px;
   border: none;
   border-radius: 2rem;
+  cursor: pointer;
 }
+
 .response {
   color: var(--clr-Orange-500);
   background-color: var(--clr-Grey-800);

@@ -21,7 +21,7 @@
   </head>
   <body>
     <main class="wrapper">
-      <article class="review_block">
+      <article class="review_block" id="review_block">
         <div class="review_svg">
           <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -36,18 +36,18 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <form>
-          <div class="review_btn">
-            <button type="menu">1</button>
-            <button type="menu">2</button>
-            <button type="menu">3</button>
-            <button type="menu">4</button>
-            <button type="menu">5</button>
+        <form id="form">
+          <div class="review_btn" id="review_btn">
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
           </div>
           <button type="submit">SUBMIT</button>
         </form>
       </article>
-      <article class="response_block" style="display: none">
+      <article class="response_block" style="display: none" id="response_block">
         <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
           <g fill="none">
             <path
@@ -137,8 +137,8 @@
             />
           </g>
         </svg>
-        <div class="response">
-          <p>You selected <span class="rating_value"></span> out of 5</p>
+        <div class="response" >
+          <p id='rating_value'></p>
         </div>
         <h1>Thank you!</h1>
         <p>
